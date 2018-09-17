@@ -10,17 +10,21 @@
  
 # Build results
  
-[Dd]ebug/
-[Rr]elease/
+#[Dd]ebug/
+#[Rr]elease/
 x64/
 build/
-[Bb]in/
+#[Bb]in/
 [Oo]bj/
  
 # MSTest test Results
 [Tt]est[Rr]esult*/
 [Bb]uild[Ll]og.*
  
+*.tlog
+*.exp
+*.idb
+
 *_i.c
 *_p.c
 *.ilk

@@ -1,0 +1,6 @@
+{
+    "proto": {
+        "name": "telnet",
+        "port": [23]
+    }
+}
