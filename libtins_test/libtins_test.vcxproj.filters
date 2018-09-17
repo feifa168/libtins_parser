@@ -1,0 +1,595 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="include">
+      <UniqueIdentifier>{567ff08e-a5af-47c2-999e-dd4d7aadb1c8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="include\tins">
+      <UniqueIdentifier>{cb0260aa-36e5-4d82-ad43-b8fdee35b5f9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="include\tins\detail">
+      <UniqueIdentifier>{45d90b05-b5c7-432a-a955-8103a009a9aa}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="include\tins\dot11">
+      <UniqueIdentifier>{678a0624-f019-45c8-a79c-f8b4d9b657fd}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="include\tins\tcp_ip">
+      <UniqueIdentifier>{4151828c-487a-4d1b-8f7e-f4f3862e5beb}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="include\tins\utils">
+      <UniqueIdentifier>{a786c6c6-9973-4fb7-bdab-195f3a57cb40}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src">
+      <UniqueIdentifier>{73db7fc8-d9c5-4525-bf75-66b9874d67a0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\detail">
+      <UniqueIdentifier>{b55e48ac-57cc-4cb0-bd9b-1e1f3f14f022}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\dot11">
+      <UniqueIdentifier>{126da581-01a2-48c2-a5fc-e7fae103da2c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\tcp_ip">
+      <UniqueIdentifier>{aeb81591-a73f-4173-9ecf-c240248aec71}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\utils">
+      <UniqueIdentifier>{43f18abb-dcd1-4554-b52b-cd0f5cc52bfb}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="example">
+      <UniqueIdentifier>{898bc8d1-5922-47b7-8e63-53a09c9c6f19}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="include\tins\address_range.h">
+      <Filter>include\tins</Filter>
+    </ClInclude>
+    <ClInclude Include="include\tins\arp.h">
+      <Filter>include\tins</Filter>
+    </ClInclude>
+    <ClInclude Include="include\tins\bootp.h">
+      <Filter>include\tins</Filter>
+    </ClInclude>
+    <ClInclude Include="include\tins\constants.h">
+      <Filter>include\tins</Filter>
+    </ClInclude>
+    <ClInclude Include="include\tins\crypto.h">
+      <Filter>include\tins</Filter>
+    </ClInclude>
+    <ClInclude Include="include\tins\cxxstd.h">
+      <Filter>include\tins</Filter>
+    </ClInclude>
+    <ClInclude Include="include\tins\data_link_type.h">
+      <Filter>include\tins</Filter>
+    </ClInclude>
+    <ClInclude Include="include\tins\dhcp.h">
+      <Filter>include\tins</Filter>
+    </ClInclude>
+    <ClInclude Include="include\tins\dhcpv6.h">
+      <Filter>include\tins</Filter>
+    </ClInclude>
+    <ClInclude Include="include\tins\dns.h">
+      <Filter>include\tins</Filter>
+    </ClInclude>
+    <ClInclude Include="include\tins\dot1q.h">
+      <Filter>include\tins</Filter>
+    </ClInclude>
+    <ClInclude Include="include\tins\dot3.h">
+      <Filter>include\tins</Filter>
+    </ClInclude>
+    <ClInclude Include="include\tins\dot11.h">
+      <Filter>include\tins</Filter>
+    </ClInclude>
+    <ClInclude Include="include\tins\eapol.h">
+      <Filter>include\tins</Filter>
+    </ClInclude>
+    <ClInclude Include="include\tins\endianness.h">
+      <Filter>include\tins</Filter>
+    </ClInclude>
+    <ClInclude Include="include\tins\ethernetII.h">
+      <Filter>include\tins</Filter>
+    </ClInclude>
+    <ClInclude Include="include\tins\exceptions.h">
+      <Filter>include\tins</Filter>
+    </ClInclude>
+    <ClInclude Include="include\tins\handshake_capturer.h">
+      <Filter>include\tins</Filter>
+    </ClInclude>
+    <ClInclude Include="include\tins\hw_address.h">
+      <Filter>include\tins</Filter>
+    </ClInclude>
+    <ClInclude Include="include\tins\icmp.h">
+      <Filter>include\tins</Filter>
+    </ClInclude>
+    <ClInclude Include="include\tins\icmp_extension.h">
+      <Filter>include\tins</Filter>
+    </ClInclude>
+    <ClInclude Include="include\tins\icmpv6.h">
+      <Filter>include\tins</Filter>
+    </ClInclude>
+    <ClInclude Include="include\tins\ieee802_3.h">
+      <Filter>include\tins</Filter>
+    </ClInclude>
+    <ClInclude Include="include\tins\internals.h">
+      <Filter>include\tins</Filter>
+    </ClInclude>
+    <ClInclude Include="include\tins\ip.h">
+      <Filter>include\tins</Filter>
+    </ClInclude>
+    <ClInclude Include="include\tins\ip_address.h">
+      <Filter>include\tins</Filter>
+    </ClInclude>
+    <ClInclude Include="include\tins\ip_reassembler.h">
+      <Filter>include\tins</Filter>
+    </ClInclude>
+    <ClInclude Include="include\tins\ipsec.h">
+      <Filter>include\tins</Filter>
+    </ClInclude>
+    <ClInclude Include="include\tins\llc.h">
+      <Filter>include\tins</Filter>
+    </ClInclude>
+    <ClInclude Include="include\tins\loopback.h">
+      <Filter>include\tins</Filter>
+    </ClInclude>
+    <ClInclude Include="include\tins\macros.h">
+      <Filter>include\tins</Filter>
+    </ClInclude>
+    <ClInclude Include="include\tins\memory_helpers.h">
+      <Filter>include\tins</Filter>
+    </ClInclude>
+    <ClInclude Include="include\tins\mpls.h">
+      <Filter>include\tins</Filter>
+    </ClInclude>
+    <ClInclude Include="include\tins\network_interface.h">
+      <Filter>include\tins</Filter>
+    </ClInclude>
+    <ClInclude Include="include\tins\offline_packet_filter.h">
+      <Filter>include\tins</Filter>
+    </ClInclude>
+    <ClInclude Include="include\tins\packet.h">
+      <Filter>include\tins</Filter>
+    </ClInclude>
+    <ClInclude Include="include\tins\packet_sender.h">
+      <Filter>include\tins</Filter>
+    </ClInclude>
+    <ClInclude Include="include\tins\packet_writer.h">
+      <Filter>include\tins</Filter>
+    </ClInclude>
+    <ClInclude Include="include\tins\pdu.h">
+      <Filter>include\tins</Filter>
+    </ClInclude>
+    <ClInclude Include="include\tins\pdu_allocator.h">
+      <Filter>include\tins</Filter>
+    </ClInclude>
+    <ClInclude Include="include\tins\pdu_cacher.h">
+      <Filter>include\tins</Filter>
+    </ClInclude>
+    <ClInclude Include="include\tins\pdu_iterator.h">
+      <Filter>include\tins</Filter>
+    </ClInclude>
+    <ClInclude Include="include\tins\pdu_option.h">
+      <Filter>include\tins</Filter>
+    </ClInclude>
+    <ClInclude Include="include\tins\pktap.h">
+      <Filter>include\tins</Filter>
+    </ClInclude>
+    <ClInclude Include="include\tins\ppi.h">
+      <Filter>include\tins</Filter>
+    </ClInclude>
+    <ClInclude Include="include\tins\pppoe.h">
+      <Filter>include\tins</Filter>
+    </ClInclude>
+    <ClInclude Include="include\tins\radiotap.h">
+      <Filter>include\tins</Filter>
+    </ClInclude>
+    <ClInclude Include="include\tins\rawpdu.h">
+      <Filter>include\tins</Filter>
+    </ClInclude>
+    <ClInclude Include="include\tins\rsn_information.h">
+      <Filter>include\tins</Filter>
+    </ClInclude>
+    <ClInclude Include="include\tins\sll.h">
+      <Filter>include\tins</Filter>
+    </ClInclude>
+    <ClInclude Include="include\tins\small_uint.h">
+      <Filter>include\tins</Filter>
+    </ClInclude>
+    <ClInclude Include="include\tins\snap.h">
+      <Filter>include\tins</Filter>
+    </ClInclude>
+    <ClInclude Include="include\tins\sniffer.h">
+      <Filter>include\tins</Filter>
+    </ClInclude>
+    <ClInclude Include="include\tins\stp.h">
+      <Filter>include\tins</Filter>
+    </ClInclude>
+    <ClInclude Include="include\tins\tcp.h">
+      <Filter>include\tins</Filter>
+    </ClInclude>
+    <ClInclude Include="include\tins\tcp_stream.h">
+      <Filter>include\tins</Filter>
+    </ClInclude>
+    <ClInclude Include="include\tins\timestamp.h">
+      <Filter>include\tins</Filter>
+    </ClInclude>
+    <ClInclude Include="include\tins\tins.h">
+      <Filter>include\tins</Filter>
+    </ClInclude>
+    <ClInclude Include="include\tins\udp.h">
+      <Filter>include\tins</Filter>
+    </ClInclude>
+    <ClInclude Include="include\tins\utils.h">
+      <Filter>include\tins</Filter>
+    </ClInclude>
+    <ClInclude Include="include\tins\detail\address_helpers.h">
+      <Filter>include\tins\detail</Filter>
+    </ClInclude>
+    <ClInclude Include="include\tins\detail\icmp_extension_helpers.h">
+      <Filter>include\tins\detail</Filter>
+    </ClInclude>
+    <ClInclude Include="include\tins\detail\pdu_helpers.h">
+      <Filter>include\tins\detail</Filter>
+    </ClInclude>
+    <ClInclude Include="include\tins\detail\sequence_number_helpers.h">
+      <Filter>include\tins\detail</Filter>
+    </ClInclude>
+    <ClInclude Include="include\tins\detail\smart_ptr.h">
+      <Filter>include\tins\detail</Filter>
+    </ClInclude>
+    <ClInclude Include="include\tins\detail\type_traits.h">
+      <Filter>include\tins\detail</Filter>
+    </ClInclude>
+    <ClInclude Include="include\tins\utils\checksum_utils.h">
+      <Filter>include\tins\utils</Filter>
+    </ClInclude>
+    <ClInclude Include="include\tins\utils\frequency_utils.h">
+      <Filter>include\tins\utils</Filter>
+    </ClInclude>
+    <ClInclude Include="include\tins\utils\pdu_utils.h">
+      <Filter>include\tins\utils</Filter>
+    </ClInclude>
+    <ClInclude Include="include\tins\utils\radiotap_parser.h">
+      <Filter>include\tins\utils</Filter>
+    </ClInclude>
+    <ClInclude Include="include\tins\utils\radiotap_writer.h">
+      <Filter>include\tins\utils</Filter>
+    </ClInclude>
+    <ClInclude Include="include\tins\utils\resolve_utils.h">
+      <Filter>include\tins\utils</Filter>
+    </ClInclude>
+    <ClInclude Include="include\tins\utils\routing_utils.h">
+      <Filter>include\tins\utils</Filter>
+    </ClInclude>
+    <ClInclude Include="include\tins\tcp_ip\ack_tracker.h">
+      <Filter>include\tins\tcp_ip</Filter>
+    </ClInclude>
+    <ClInclude Include="include\tins\tcp_ip\data_tracker.h">
+      <Filter>include\tins\tcp_ip</Filter>
+    </ClInclude>
+    <ClInclude Include="include\tins\tcp_ip\flow.h">
+      <Filter>include\tins\tcp_ip</Filter>
+    </ClInclude>
+    <ClInclude Include="include\tins\tcp_ip\stream.h">
+      <Filter>include\tins\tcp_ip</Filter>
+    </ClInclude>
+    <ClInclude Include="include\tins\tcp_ip\stream_follower.h">
+      <Filter>include\tins\tcp_ip</Filter>
+    </ClInclude>
+    <ClInclude Include="include\tins\tcp_ip\stream_identifier.h">
+      <Filter>include\tins\tcp_ip</Filter>
+    </ClInclude>
+    <ClInclude Include="include\tins\dot11\dot11_assoc.h">
+      <Filter>include\tins\dot11</Filter>
+    </ClInclude>
+    <ClInclude Include="include\tins\dot11\dot11_auth.h">
+      <Filter>include\tins\dot11</Filter>
+    </ClInclude>
+    <ClInclude Include="include\tins\dot11\dot11_base.h">
+      <Filter>include\tins\dot11</Filter>
+    </ClInclude>
+    <ClInclude Include="include\tins\dot11\dot11_beacon.h">
+      <Filter>include\tins\dot11</Filter>
+    </ClInclude>
+    <ClInclude Include="include\tins\dot11\dot11_control.h">
+      <Filter>include\tins\dot11</Filter>
+    </ClInclude>
+    <ClInclude Include="include\tins\dot11\dot11_data.h">
+      <Filter>include\tins\dot11</Filter>
+    </ClInclude>
+    <ClInclude Include="include\tins\dot11\dot11_mgmt.h">
+      <Filter>include\tins\dot11</Filter>
+    </ClInclude>
+    <ClInclude Include="include\tins\dot11\dot11_probe.h">
+      <Filter>include\tins\dot11</Filter>
+    </ClInclude>
+    <ClInclude Include="include\tins\config.h">
+      <Filter>include\tins</Filter>
+    </ClInclude>
+    <ClInclude Include="include\tins\ipv6_address.h">
+      <Filter>include\tins</Filter>
+    </ClInclude>
+    <ClInclude Include="include\tins\ipv6.h">
+      <Filter>include\tins</Filter>
+    </ClInclude>
+    <ClInclude Include="pkg_tuple.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="include\tins\config.h.in">
+      <Filter>include\tins</Filter>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="src\address_range.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\arp.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\bootp.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\crypto.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\dhcp.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\dhcpv6.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\dns.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\dot1q.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\dot3.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\eapol.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\ethernetII.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\handshake_capturer.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\hw_address.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\icmp.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\icmp_extension.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\icmpv6.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\ip.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\ip_address.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\ip_reassembler.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\ipsec.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\llc.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\loopback.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\memory_helpers.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\mpls.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\network_interface.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\offline_packet_filter.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\packet_sender.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\packet_writer.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\pdu.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\pdu_iterator.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\pdu_option.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\pktap.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\ppi.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\pppoe.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\radiotap.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\rawpdu.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\rsn_information.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\sll.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\snap.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\sniffer.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\stp.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\tcp.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\tcp_stream.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\timestamp.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\udp.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\detail\address_helpers.cpp">
+      <Filter>src\detail</Filter>
+    </ClCompile>
+    <ClCompile Include="src\detail\icmp_extension_helpers.cpp">
+      <Filter>src\detail</Filter>
+    </ClCompile>
+    <ClCompile Include="src\detail\pdu_helpers.cpp">
+      <Filter>src\detail</Filter>
+    </ClCompile>
+    <ClCompile Include="src\detail\sequence_number_helpers.cpp">
+      <Filter>src\detail</Filter>
+    </ClCompile>
+    <ClCompile Include="src\dot11\dot11_assoc.cpp">
+      <Filter>src\dot11</Filter>
+    </ClCompile>
+    <ClCompile Include="src\dot11\dot11_auth.cpp">
+      <Filter>src\dot11</Filter>
+    </ClCompile>
+    <ClCompile Include="src\dot11\dot11_base.cpp">
+      <Filter>src\dot11</Filter>
+    </ClCompile>
+    <ClCompile Include="src\dot11\dot11_beacon.cpp">
+      <Filter>src\dot11</Filter>
+    </ClCompile>
+    <ClCompile Include="src\dot11\dot11_control.cpp">
+      <Filter>src\dot11</Filter>
+    </ClCompile>
+    <ClCompile Include="src\dot11\dot11_data.cpp">
+      <Filter>src\dot11</Filter>
+    </ClCompile>
+    <ClCompile Include="src\dot11\dot11_mgmt.cpp">
+      <Filter>src\dot11</Filter>
+    </ClCompile>
+    <ClCompile Include="src\dot11\dot11_probe.cpp">
+      <Filter>src\dot11</Filter>
+    </ClCompile>
+    <ClCompile Include="src\tcp_ip\ack_tracker.cpp">
+      <Filter>src\tcp_ip</Filter>
+    </ClCompile>
+    <ClCompile Include="src\tcp_ip\data_tracker.cpp">
+      <Filter>src\tcp_ip</Filter>
+    </ClCompile>
+    <ClCompile Include="src\tcp_ip\flow.cpp">
+      <Filter>src\tcp_ip</Filter>
+    </ClCompile>
+    <ClCompile Include="src\tcp_ip\stream.cpp">
+      <Filter>src\tcp_ip</Filter>
+    </ClCompile>
+    <ClCompile Include="src\tcp_ip\stream_follower.cpp">
+      <Filter>src\tcp_ip</Filter>
+    </ClCompile>
+    <ClCompile Include="src\tcp_ip\stream_identifier.cpp">
+      <Filter>src\tcp_ip</Filter>
+    </ClCompile>
+    <ClCompile Include="src\utils\checksum_utils.cpp">
+      <Filter>src\utils</Filter>
+    </ClCompile>
+    <ClCompile Include="src\utils\frequency_utils.cpp">
+      <Filter>src\utils</Filter>
+    </ClCompile>
+    <ClCompile Include="src\utils\pdu_utils.cpp">
+      <Filter>src\utils</Filter>
+    </ClCompile>
+    <ClCompile Include="src\utils\radiotap_parser.cpp">
+      <Filter>src\utils</Filter>
+    </ClCompile>
+    <ClCompile Include="src\utils\radiotap_writer.cpp">
+      <Filter>src\utils</Filter>
+    </ClCompile>
+    <ClCompile Include="src\utils\resolve_utils.cpp">
+      <Filter>src\utils</Filter>
+    </ClCompile>
+    <ClCompile Include="src\utils\routing_utils.cpp">
+      <Filter>src\utils</Filter>
+    </ClCompile>
+    <ClCompile Include="src\ipv6.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\ipv6_address.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="main.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="test_interfaces_info.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="test_defragmenter.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="test_default_iface.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="test_capture.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="test_return_temp_object.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="test_rvalue_string.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="test_lock_free.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="custom_capture.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="pkg_queue.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="pkg_tuple.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="test_tcp_reassemble.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="test_ip_defragment_and_tcp_reassmble.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="src\CMakeLists.txt">
+      <Filter>src</Filter>
+    </Text>
+  </ItemGroup>
+</Project>

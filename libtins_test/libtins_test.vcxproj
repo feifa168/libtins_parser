@@ -1,0 +1,339 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="include\tins\address_range.h" />
+    <ClInclude Include="include\tins\arp.h" />
+    <ClInclude Include="include\tins\bootp.h" />
+    <ClInclude Include="include\tins\config.h" />
+    <ClInclude Include="include\tins\constants.h" />
+    <ClInclude Include="include\tins\crypto.h" />
+    <ClInclude Include="include\tins\cxxstd.h" />
+    <ClInclude Include="include\tins\data_link_type.h" />
+    <ClInclude Include="include\tins\detail\address_helpers.h" />
+    <ClInclude Include="include\tins\detail\icmp_extension_helpers.h" />
+    <ClInclude Include="include\tins\detail\pdu_helpers.h" />
+    <ClInclude Include="include\tins\detail\sequence_number_helpers.h" />
+    <ClInclude Include="include\tins\detail\smart_ptr.h" />
+    <ClInclude Include="include\tins\detail\type_traits.h" />
+    <ClInclude Include="include\tins\dhcp.h" />
+    <ClInclude Include="include\tins\dhcpv6.h" />
+    <ClInclude Include="include\tins\dns.h" />
+    <ClInclude Include="include\tins\dot11.h" />
+    <ClInclude Include="include\tins\dot11\dot11_assoc.h" />
+    <ClInclude Include="include\tins\dot11\dot11_auth.h" />
+    <ClInclude Include="include\tins\dot11\dot11_base.h" />
+    <ClInclude Include="include\tins\dot11\dot11_beacon.h" />
+    <ClInclude Include="include\tins\dot11\dot11_control.h" />
+    <ClInclude Include="include\tins\dot11\dot11_data.h" />
+    <ClInclude Include="include\tins\dot11\dot11_mgmt.h" />
+    <ClInclude Include="include\tins\dot11\dot11_probe.h" />
+    <ClInclude Include="include\tins\dot1q.h" />
+    <ClInclude Include="include\tins\dot3.h" />
+    <ClInclude Include="include\tins\eapol.h" />
+    <ClInclude Include="include\tins\endianness.h" />
+    <ClInclude Include="include\tins\ethernetII.h" />
+    <ClInclude Include="include\tins\exceptions.h" />
+    <ClInclude Include="include\tins\handshake_capturer.h" />
+    <ClInclude Include="include\tins\hw_address.h" />
+    <ClInclude Include="include\tins\icmp.h" />
+    <ClInclude Include="include\tins\icmpv6.h" />
+    <ClInclude Include="include\tins\icmp_extension.h" />
+    <ClInclude Include="include\tins\ieee802_3.h" />
+    <ClInclude Include="include\tins\internals.h" />
+    <ClInclude Include="include\tins\ip.h" />
+    <ClInclude Include="include\tins\ipsec.h" />
+    <ClInclude Include="include\tins\ipv6.h" />
+    <ClInclude Include="include\tins\ipv6_address.h" />
+    <ClInclude Include="include\tins\ip_address.h" />
+    <ClInclude Include="include\tins\ip_reassembler.h" />
+    <ClInclude Include="include\tins\llc.h" />
+    <ClInclude Include="include\tins\loopback.h" />
+    <ClInclude Include="include\tins\macros.h" />
+    <ClInclude Include="include\tins\memory_helpers.h" />
+    <ClInclude Include="include\tins\mpls.h" />
+    <ClInclude Include="include\tins\network_interface.h" />
+    <ClInclude Include="include\tins\offline_packet_filter.h" />
+    <ClInclude Include="include\tins\packet.h" />
+    <ClInclude Include="include\tins\packet_sender.h" />
+    <ClInclude Include="include\tins\packet_writer.h" />
+    <ClInclude Include="include\tins\pdu.h" />
+    <ClInclude Include="include\tins\pdu_allocator.h" />
+    <ClInclude Include="include\tins\pdu_cacher.h" />
+    <ClInclude Include="include\tins\pdu_iterator.h" />
+    <ClInclude Include="include\tins\pdu_option.h" />
+    <ClInclude Include="include\tins\pktap.h" />
+    <ClInclude Include="include\tins\ppi.h" />
+    <ClInclude Include="include\tins\pppoe.h" />
+    <ClInclude Include="include\tins\radiotap.h" />
+    <ClInclude Include="include\tins\rawpdu.h" />
+    <ClInclude Include="include\tins\rsn_information.h" />
+    <ClInclude Include="include\tins\sll.h" />
+    <ClInclude Include="include\tins\small_uint.h" />
+    <ClInclude Include="include\tins\snap.h" />
+    <ClInclude Include="include\tins\sniffer.h" />
+    <ClInclude Include="include\tins\stp.h" />
+    <ClInclude Include="include\tins\tcp.h" />
+    <ClInclude Include="include\tins\tcp_ip\ack_tracker.h" />
+    <ClInclude Include="include\tins\tcp_ip\data_tracker.h" />
+    <ClInclude Include="include\tins\tcp_ip\flow.h" />
+    <ClInclude Include="include\tins\tcp_ip\stream.h" />
+    <ClInclude Include="include\tins\tcp_ip\stream_follower.h" />
+    <ClInclude Include="include\tins\tcp_ip\stream_identifier.h" />
+    <ClInclude Include="include\tins\tcp_stream.h" />
+    <ClInclude Include="include\tins\timestamp.h" />
+    <ClInclude Include="include\tins\tins.h" />
+    <ClInclude Include="include\tins\udp.h" />
+    <ClInclude Include="include\tins\utils.h" />
+    <ClInclude Include="include\tins\utils\checksum_utils.h" />
+    <ClInclude Include="include\tins\utils\frequency_utils.h" />
+    <ClInclude Include="include\tins\utils\pdu_utils.h" />
+    <ClInclude Include="include\tins\utils\radiotap_parser.h" />
+    <ClInclude Include="include\tins\utils\radiotap_writer.h" />
+    <ClInclude Include="include\tins\utils\resolve_utils.h" />
+    <ClInclude Include="include\tins\utils\routing_utils.h" />
+    <ClInclude Include="pkg_tuple.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="include\tins\config.h.in" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="custom_capture.cpp" />
+    <ClCompile Include="main.cpp" />
+    <ClCompile Include="pkg_queue.cpp" />
+    <ClCompile Include="pkg_tuple.cpp" />
+    <ClCompile Include="src\address_range.cpp" />
+    <ClCompile Include="src\arp.cpp" />
+    <ClCompile Include="src\bootp.cpp" />
+    <ClCompile Include="src\crypto.cpp" />
+    <ClCompile Include="src\detail\address_helpers.cpp" />
+    <ClCompile Include="src\detail\icmp_extension_helpers.cpp" />
+    <ClCompile Include="src\detail\pdu_helpers.cpp" />
+    <ClCompile Include="src\detail\sequence_number_helpers.cpp" />
+    <ClCompile Include="src\dhcp.cpp" />
+    <ClCompile Include="src\dhcpv6.cpp" />
+    <ClCompile Include="src\dns.cpp" />
+    <ClCompile Include="src\dot11\dot11_assoc.cpp" />
+    <ClCompile Include="src\dot11\dot11_auth.cpp" />
+    <ClCompile Include="src\dot11\dot11_base.cpp" />
+    <ClCompile Include="src\dot11\dot11_beacon.cpp" />
+    <ClCompile Include="src\dot11\dot11_control.cpp" />
+    <ClCompile Include="src\dot11\dot11_data.cpp" />
+    <ClCompile Include="src\dot11\dot11_mgmt.cpp" />
+    <ClCompile Include="src\dot11\dot11_probe.cpp" />
+    <ClCompile Include="src\dot1q.cpp" />
+    <ClCompile Include="src\dot3.cpp" />
+    <ClCompile Include="src\eapol.cpp" />
+    <ClCompile Include="src\ethernetII.cpp" />
+    <ClCompile Include="src\handshake_capturer.cpp" />
+    <ClCompile Include="src\hw_address.cpp" />
+    <ClCompile Include="src\icmp.cpp" />
+    <ClCompile Include="src\icmpv6.cpp" />
+    <ClCompile Include="src\icmp_extension.cpp" />
+    <ClCompile Include="src\ip.cpp" />
+    <ClCompile Include="src\ipsec.cpp" />
+    <ClCompile Include="src\ipv6.cpp" />
+    <ClCompile Include="src\ipv6_address.cpp" />
+    <ClCompile Include="src\ip_address.cpp" />
+    <ClCompile Include="src\ip_reassembler.cpp" />
+    <ClCompile Include="src\llc.cpp" />
+    <ClCompile Include="src\loopback.cpp" />
+    <ClCompile Include="src\memory_helpers.cpp" />
+    <ClCompile Include="src\mpls.cpp" />
+    <ClCompile Include="src\network_interface.cpp" />
+    <ClCompile Include="src\offline_packet_filter.cpp" />
+    <ClCompile Include="src\packet_sender.cpp" />
+    <ClCompile Include="src\packet_writer.cpp" />
+    <ClCompile Include="src\pdu.cpp" />
+    <ClCompile Include="src\pdu_iterator.cpp" />
+    <ClCompile Include="src\pdu_option.cpp" />
+    <ClCompile Include="src\pktap.cpp" />
+    <ClCompile Include="src\ppi.cpp" />
+    <ClCompile Include="src\pppoe.cpp" />
+    <ClCompile Include="src\radiotap.cpp" />
+    <ClCompile Include="src\rawpdu.cpp" />
+    <ClCompile Include="src\rsn_information.cpp" />
+    <ClCompile Include="src\sll.cpp" />
+    <ClCompile Include="src\snap.cpp" />
+    <ClCompile Include="src\sniffer.cpp" />
+    <ClCompile Include="src\stp.cpp" />
+    <ClCompile Include="src\tcp.cpp" />
+    <ClCompile Include="src\tcp_ip\ack_tracker.cpp" />
+    <ClCompile Include="src\tcp_ip\data_tracker.cpp" />
+    <ClCompile Include="src\tcp_ip\flow.cpp" />
+    <ClCompile Include="src\tcp_ip\stream.cpp" />
+    <ClCompile Include="src\tcp_ip\stream_follower.cpp" />
+    <ClCompile Include="src\tcp_ip\stream_identifier.cpp" />
+    <ClCompile Include="src\tcp_stream.cpp" />
+    <ClCompile Include="src\timestamp.cpp" />
+    <ClCompile Include="src\udp.cpp" />
+    <ClCompile Include="src\utils\checksum_utils.cpp" />
+    <ClCompile Include="src\utils\frequency_utils.cpp" />
+    <ClCompile Include="src\utils\pdu_utils.cpp" />
+    <ClCompile Include="src\utils\radiotap_parser.cpp" />
+    <ClCompile Include="src\utils\radiotap_writer.cpp" />
+    <ClCompile Include="src\utils\resolve_utils.cpp" />
+    <ClCompile Include="src\utils\routing_utils.cpp" />
+    <ClCompile Include="test_capture.cpp" />
+    <ClCompile Include="test_default_iface.cpp" />
+    <ClCompile Include="test_defragmenter.cpp" />
+    <ClCompile Include="test_interfaces_info.cpp" />
+    <ClCompile Include="test_ip_defragment_and_tcp_reassmble.cpp" />
+    <ClCompile Include="test_lock_free.cpp" />
+    <ClCompile Include="test_return_temp_object.cpp" />
+    <ClCompile Include="test_rvalue_string.cpp" />
+    <ClCompile Include="test_tcp_reassemble.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="src\CMakeLists.txt" />
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <VCProjectVersion>15.0</VCProjectVersion>
+    <ProjectGuid>{D46561AC-87BE-4E7C-9D36-B8511CAB599E}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <RootNamespace>libtins_test</RootNamespace>
+    <WindowsTargetPlatformVersion>10.0.14393.0</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v141</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v141</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v141</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v141</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="Shared">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <LinkIncremental>true</LinkIncremental>
+    <IncludePath>D:\library\WpdPack\Include;$(IncludePath)</IncludePath>
+    <LibraryPath>D:\library\WpdPack\Lib;$(LibraryPath)</LibraryPath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <LinkIncremental>true</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <LinkIncremental>false</LinkIncremental>
+    <IncludePath>D:\library\WpdPack\Include;$(IncludePath)</IncludePath>
+    <LibraryPath>D:\library\WpdPack\Lib;$(LibraryPath)</LibraryPath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>_XKEYCHECK_H;WIN32;_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>include;src;example;D:\library\threadpool</AdditionalIncludeDirectories>
+      <LanguageStandard>stdcpplatest</LanguageStandard>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <AdditionalDependencies>Ws2_32.lib;Iphlpapi.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;comdlg32.lib;advapi32.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;odbc32.lib;odbccp32.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>_XKEYCHECK_H;WIN32;NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>include;src;example;D:\library\threadpool</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <AdditionalDependencies>Ws2_32.lib;Iphlpapi.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;comdlg32.lib;advapi32.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;odbc32.lib;odbccp32.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+  </ItemDefinitionGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>
