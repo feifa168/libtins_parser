@@ -130,7 +130,7 @@ boost::function<create_config_parser> config_creator = boost::dll::import_alias<
 ```c++
 std::map<std::string, boost::shared_ptr<ISniffPlugin> > plugins;
 ```
-得到插件的插件的map有另个地方用到
+保存插件的map有另两个地方用到
 1. 抓包任务启动前构造pcap的抓包过滤条件，最终得到的过滤条件类似这样 tcp port 80 or tcp port 8080 or tcp port 3389 or tcp port 22 or tcp port 23
 ```c++
     // 构造过滤条件    
@@ -151,4 +151,4 @@ std::map<std::string, boost::shared_ptr<ISniffPlugin> > plugins;
         }
     }
 ```
-2. 抓取到数据包，分析出是对应的插件类型协议时，调用该插件的解析函数
+2. 抓取到数据包，分析出是对应的插件类型协议时，调用该插件的解析函数，尚未实现该功能，需要对应协议解析的支持
