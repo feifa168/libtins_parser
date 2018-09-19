@@ -134,6 +134,24 @@ void display_plugin(std::map<std::string, boost::shared_ptr<ISniffPlugin> > &plu
         }
         cout << "]" << endl;
     }
+
+    std::string filter;
+    int plugin_num = plugins.size() - 1;
+    int cur_num = 0;
+    char buf[32] = "";
+    for (auto plugin : plugins) {
+        boost::shared_ptr<ISniffPlugin> sniff_plugin = plugin.second;
+        std::vector<unsigned short> ports = sniff_plugin->get_ports();
+        for (auto port : ports) {
+            if (cur_num > 0) {
+                filter += " or ";
+            }
+            cur_num++;
+            itoa(port, buf, 10);
+            filter.append("tcp port ").append(buf);
+        }
+    }
+    cout << filter << endl;
 }
 
 void test_plugin(boost::function<create_config_parser> &config_creator) {

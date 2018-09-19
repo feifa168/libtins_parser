@@ -166,3 +166,17 @@ $RECYCLE.BIN/
  
 # VisualStudioCode
 #.vscode
+/.vscode/settings.json
+.vs/libtins_parser/v15/Browse.VC.db
+.vs/config/applicationhost.config
+.vs/WinpcapTest/v15/Solution.VC.db-wal
+.vs/ProjectSettings.json
+.vs/VSWorkspaceState.json
+.vs/slnx.sqlite
+.vs/tasks.vs.json
+.vs/WinpcapTest/v15/Browse.VC.db
+.vs/WinpcapTest/v15/Browse.VC.opendb
+.vs/WinpcapTest/v15/Solution.VC.db
+.vs/WinpcapTest/v15/Solution.VC.db-shm
+.vs/libtins_parser/v15/Browse.VC.db
+.vs/config/applicationhost.config
